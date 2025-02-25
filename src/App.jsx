@@ -8,6 +8,7 @@ import { Home } from "./components/sections/home.jsx";
 import { About } from "./components/sections/about.jsx";
 import { Projects } from "./components/sections/projects.jsx";
 import {Contact} from "./components/sections/contact.jsx";
+import {TracingBeam} from "./components/ui/tacing-beam.js";
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -21,10 +22,12 @@ function App() {
 
             <Navbar MenuOpen={MenuOpen} setMenuOpen={setMenuOpen} />
             <MobileMenu MenuOpen={MenuOpen} setMenuOpen={setMenuOpen} />
+            <TracingBeam>
             <Home />
             <About />
             <Projects />
             <Contact />
+            </TracingBeam>
 
         </div>
 
